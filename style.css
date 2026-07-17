@@ -320,188 +320,6 @@ nav {
 
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-=========================== */
-
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-        gap: 20px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    /* ===========================
-  HERO CONTENT
-=========================== */
-    .hero {
-        padding: 60px 0;
-    }
-
-    .hero-container {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 38px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .hero-image img {
-        margin: auto;
-    }
-
-    .hero-actions {
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 35px;
-        align-items: center;
-
-
-    }
-
-    .hero-buttons {
-
-        justify-content: center;
-
-    }
-
-    .hero-trust {
-
-        margin-top: 0;
-
-    }
-
-    .stars {
-
-        justify-content: center;
-
-    }
-
-    /* ===========================
-  COMPANY LOGO
-=========================== */
-    .company-logos {
-
-        justify-content: center;
-
-    }
-
-    .company-logo {
-
-        flex: 0 0 45%;
-
-        font-size: 22px;
-
-    }
-
-    /* ===========================
-   FEATURE CONTENT
-=========================== */
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title h2 {
-        font-size: 34px;
-    }
-
-    .feature-card {
-        padding: 30px 25px;
-    }
-
-    /* ===========================
-   CTA CONTENT
-=========================== */
-    .cta {
-        padding: 70px 20px;
-    }
-
-    .cta h2 {
-        font-size: 32px;
-    }
-
-    .cta p {
-        font-size: 16px;
-    }
-
-    /* ===========================
-  FOOTER CONTENT
-=========================== */
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-column {
-        margin-bottom: 20px;
-    }
-
-    .footer-column a:hover {
-        padding-left: 0;
-    }
-}
-
-.stats-grid {
-    grid-template-columns: 1fr;
-}
-
-.stat-card {
-    padding: 35px 20px;
-}
-
-.pricing-grid {
-
-    grid-template-columns: 1fr;
-
-}
-
-.featured {
-
-    transform: none;
-
-}
-
-.featured:hover {
-
-    transform: translateY(-10px);
-
-}
-
-.testimonial-grid {
-    grid-template-columns: 1fr;
-}
-/* ===========================
- CONTACT CONTENT
-=========================== */
-.input-group{
-
-    grid-template-columns:1fr;
-
-}
-
-.contact-form{
-
-    padding:30px 20px;
-
-}
 
 /* ===========================
     FEATURES SECTION
@@ -1253,4 +1071,163 @@ footer hr {
 .pricing-card,
 .testimonial-card {
     will-change: transform;
+}
+/* ===================================================
+   RESPONSIVE DESIGN
+=================================================== */
+
+@media (max-width:768px){
+
+.container{
+    width:92%;
+}
+
+/* NAVIGATION */
+
+nav{
+    flex-direction:column;
+    gap:20px;
+    height:auto;
+    padding:20px 0;
+}
+
+.nav-links{
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+/* HERO */
+
+.hero{
+    padding:70px 0;
+}
+
+.hero-container{
+    flex-direction:column-reverse;
+    align-items:center;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-content,
+.hero-image{
+    flex:100%;
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:44px;
+    line-height:1.15;
+}
+
+.hero-content p{
+    font-size:17px;
+    max-width:100%;
+    margin-bottom:30px;
+}
+
+.hero-image img{
+    max-width:320px;
+    transform:none;
+    margin:auto;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero-trust{
+    text-align:center;
+}
+
+.stars{
+    justify-content:center;
+}
+
+/* TRUSTED */
+
+.company-logos{
+    justify-content:center;
+}
+
+.company-logo{
+    flex:0 0 45%;
+}
+
+/* SECTION TITLE */
+
+.section-title h2{
+    font-size:36px;
+}
+
+.section-title p{
+    font-size:16px;
+}
+
+/* FEATURES */
+
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+/* STATS */
+
+.stats-grid{
+    grid-template-columns:1fr;
+}
+
+/* PRICING */
+
+.pricing-grid{
+    grid-template-columns:1fr;
+}
+
+.featured{
+    transform:none;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-grid{
+    grid-template-columns:1fr;
+}
+
+/* CONTACT */
+
+.input-group{
+    grid-template-columns:1fr;
+}
+
+.contact-form{
+    padding:30px 20px;
+}
+
+/* CTA */
+
+.cta{
+    padding:70px 20px;
+}
+
+.cta h2{
+    font-size:34px;
+}
+
+.cta-features{
+    flex-direction:column;
+}
+
+/* FOOTER */
+
+.footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:40px;
+}
+
+.footer-column a:hover{
+    padding-left:0;
+}
+
 }
