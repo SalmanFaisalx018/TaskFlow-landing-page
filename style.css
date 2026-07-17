@@ -96,7 +96,12 @@ nav {
     height: 80px;
 }
 
-
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:var(--dark-color);
+    cursor:pointer;
+}
 
 .logo {
     font-size: 1.8rem;
@@ -1081,22 +1086,53 @@ footer hr {
 .container{
     width:92%;
 }
-
-/* NAVIGATION */
-
+/* ===================================================
+   Navigation
+=================================================== */
 nav{
-    flex-direction:column;
-    gap:20px;
-    height:auto;
-    padding:20px 0;
+    position:relative;
+    height:80px;
+}
+
+.menu-toggle{
+    display:block;
+    position:absolute;
+    right:0;
+    top:25px;
+}
+
+.nav-btn{
+    display:none;
 }
 
 .nav-links{
+
+    position:absolute;
+
+    top:80px;
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:none;
+
     flex-direction:column;
-    gap:15px;
+
     align-items:center;
+
+    gap:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
 }
 
+.nav-links.active{
+    display:flex;
+}
 /* HERO */
 
 .hero{
